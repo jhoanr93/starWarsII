@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+.contenedor{
+	margin: auto;
+	width: 99%;
+}
+
+/* Estilos del header*/
+
+.header{
+	height: 68px;
+    background: rgba(0,0,0,0.9);
+}
+
+.header-social{
+	width: 100%;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.div-header{
+
+	width: 920px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.nav-header{
+width: 800px;
+height: 40px;
+
+float: left;
+
+}
+
+.a-header{
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	float:right;
+	transition: all 1%;
+ 
+}
+
+
+
+.header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #FBA919;
+	color #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+
+/*--------------- Estilos del menú ---------------*/
+
+.nav{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+
+	transition: all 0.4s;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.logo, .icon-menu{
+	margin: 5px;
+}
+
+.menu-link{
+	display: block;
+	padding: 20px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-link:hover, .select{
+	background: white;
+	color: #FBA919;
+}
+
+.mostrar{
+	left: 0;
+}
+
+/*----------------- Estilos del banner--------------------------*/
+
+.banner{
+	margin-top: 0px;
+	position: relative;
+	z-index: -10;
+	margin-bottom: 15px;
+}
+
+.banner .contenedor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.banner-txt{
+	display: none;
+}
+
+/*-------------------- Estilos de info ----------------------*/
+
+.info-columna{
+	background: #FBA919;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+/*------------estilos de curso--------------------*/
+
+
+.section-titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #FBA919;
+}
+
+.section-tituloW{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+
+.cursos-columna{
+	position: relative;
+	margin-bottom: 30px;
+}
+.cursos-descripcion{
+	position: absolute;
+	top:0;
+	left: 0;
+	color:#fff;
+	background: rgba(0,0,0,0.5);
+	width: 60%;
+	height: 100%;
+	padding: 5px;
+
+
+}
+
+.cursos-titulo{
+	font-size:25px;
+	margin: 5px 0;
+}
+
+.cursos-img{
+	width: 100%;
+}
+
+/*________________ Estilos del div trailer _________________________*/
+
+.bot1_wrapper {
+    background: #252525;
+    border-top: 4px solid #FBA919;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    color: #959595;
+    text-align: center;
+}
+
+.bot2_wrapper {
+    background: white;
+    border-top: 4px solid #FBA919;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    color: #959595;
+}
+
+video{
+	    height: 500px;
+    	
+	    margin-top: 6px;
+	    margin-bottom: 20px;
+
+	
+}
+
+
+/*____________________ Estilos del footer -------------------------*/
+
+.footer{
+	background: #333;
+	padding: 10px;
+	text-align: center;
+	border-top: 4px solid #FBA919;
+
+}
+
+.footer-text{
+	margin-top: 10px;
+	color: white;
+}
+
+.footer .social [class^="icon-"]{
+	color:#333;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+/*_____________________-Estilos responsive---------------------------------*/
+
+/* Cuando llegue a ese tamaño de 480px cambie las caracteristicas que dicen a continuacion */
+@media (min-width: 480px){
+	.logo{
+		font-size: 40px;
+		width: 9.2%;
+		height: 9.2%;
+		margin: 1px;
+	}
+
+	.banner-titulo{
+		font-size: 30px;
+		margin: 5px 0;
+		background: rgba(0,0,0,0.6);
+		}
+
+	.banner-txt{
+		display: block;
+		font-size: 18px;
+		margin: 7px 0;
+	}
+
+	.info, .cursos{
+		display: flex;
+		justify-content: space-between;
+		margin-top: -60px;/* esta linea permite que los cuadros esten dentro del cuadro grande y que no empiecen despues*/
+	}
+
+	.info-columna{
+		width: 30%;
+
+	}
+
+	.info-titulo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	.cursos{
+		flex-wrap: wrap;/*para que el contendio que no entre se vaya para abajo*/
+		margin-top: 0;
+
+	}
+	.cursos-titulo{
+		width: 100%;
+	}
+	.cursos-columna{
+		width: 48%;
+	}
+	.footer .social [class^="icon-"]{
+		margin:0 10px;
+	}
+
+}
+
+
+@media(min-width: 768px){
+	.banner-titulo{
+		font-size: 50px;
+	}
+	.cursos-titulo{
+		font-size: 40px;
+	}
+}
+
+@media(min-width: 1024px){
+	.nav{
+		position: static;
+		width: auto;
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	.cursos-txt{
+		font-size: 20px;
+
+	}
+
+	.cursos-descripcion{
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+
+	.section-titulo{
+		font-size: 50px;
+		margin: 30px 0;
+		width: -webkit-fill-available;
+	}
+
+	.section-tituloW{
+		font-size: 50px;
+		margin-top: 1px;
+		width: -webkit-fill-available;
+		color: white;
+	}
+
+	.banner-txt{
+		font-size: 35px;
+		background: rgba(0,0,0,0.6);
+		margin-top: 1px;
+	}
+
+	.menu-link{
+		background: none;
+		font-size: 20px;
+	}
+
+	.select{
+		color: #fff;
+		background: #FBA919;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+
+	.banner-titulo{
+		font-size: 60px;
+	}
+
+	.info{
+		margin-top: -120px;
+	}
+
+	.info-columna{
+		padding: 30px;
+	}
+
+	.info-titulo{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.info-txt{
+		    font-size: 18px;
+    		text-align: center;
+	}
+
+	.cursos-titulo{
+		font-size: 50px;
+	}
+
+	.contenedor{
+	margin: auto;
+	width: 1024px;
+}
+
+.cursos-img2 {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor2{
+		width: 800px;
+		height: 500px;
+		text-align: center;
+	}
+
+
+}
+
+@media(min-width: 1280px){
+	.contenedor{
+		width: 1200px;
+	}
+
+	.banner .contenedor{
+		top: 40%;
+	}
+
+	.info{
+		margin-top: -220px;
+	}
+
+	.info-txt{
+		font-size: 18px;
+    	text-align: center;
+	
+	}
+
+	.contenedor2{
+		width: 100%;
+		height: 500px;
+		text-align: center;
+	}
+}
